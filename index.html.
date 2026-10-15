@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bienvenue sur le site officiel de l'École Mame Woli Gueye (EMWG), située à Yène-Nditakh, Rufisque, Sénégal.">
+  <title>EMWG | École Mame Woli Gueye</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #203047;
+      line-height: 1.6;
+      background: #f6f8fb;
+    }
+    header {
+      background: #075b45;
+      color: white;
+      padding: 24px 18px;
+      text-align: center;
+    }
+    .logo {
+      display: inline-flex;
+      width: 76px;
+      height: 76px;
+      border: 2px solid #e7c76b;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      color: #f5d77e;
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    header h1 { margin: 4px 0; font-size: 27px; }
+    header p { margin: 5px 0; }
+    nav {
+      background: #064735;
+      text-align: center;
+      padding: 12px 5px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 9px;
+      font-size: 14px;
+    }
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #e5f3eb, #fff8e5);
+    }
+    .hero h2 {
+      color: #075b45;
+      font-size: 32px;
+      line-height: 1.2;
+    }
+    .hero p { max-width: 580px; margin: 18px auto; }
+    .button {
+      display: inline-block;
+      background: #075b45;
+      color: white;
+      padding: 12px 22px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 35px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    section h2 {
+      color: #075b45;
+      text-align: center;
+    }
+    .card {
+      background: white;
+      padding: 22px;
+      border-radius: 12px;
+      margin: 14px 0;
+      box-shadow: 0 3px 14px #152a4010;
+    }
+    footer {
+      background: #064735;
+      color: white;
+      text-align: center;
+      padding: 24px 16px;
+    }
+    footer a { color: #f5d77e; }
+    @media (max-width: 480px) {
+      header h1 { font-size: 23px; }
+      .hero h2 { font-size: 27px; }
+      nav a { margin: 0 5px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">EMWG</div>
+    <h1>École Mame Woli Gueye</h1>
+    <p>Enseignement • Éducation • Avenir</p>
+    <p>Yène-Nditakh, Rufisque, Sénégal</p>
+  </header>
+
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#ecole">Notre école</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <div class="hero" id="accueil">
+      <h2>Bienvenue à l'EMWG</h2>
+      <p>
+        Découvrez l'École Mame Woli Gueye,
+        votre établissement scolaire à Yène-Nditakh,
+        dans le département de Rufisque.
+      </p>
+      <a class="button" href="#contact">Nous contacter</a>
+    </div>
+
+    <section id="ecole">
+      <h2>Notre école</h2>
+      <div class="card">
+        <h3>École Mame Woli Gueye</h3>
+        <p>
+          Bienvenue sur le site officiel de l'EMWG.
+          Cet espace a pour objectif de présenter
+          notre établissement et de faciliter
+          les échanges avec les familles.
+        </p>
+        <p><strong>Localisation :</strong> Yène-Nditakh, Rufisque, Sénégal.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact et renseignements</h2>
+      <div class="card">
+        <p>
+          Pour toute demande de renseignements sur
+          l'établissement, contactez directement l'école.
+        </p>
+        <p><strong>Adresse :</strong> Yène-Nditakh, Rufisque, Sénégal.</p>
+        <p><strong>Téléphone :</strong> À compléter</p>
+        <p>
+          <strong>Horaires et inscriptions :</strong>
+          informations à confirmer auprès de l'école.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>EMWG — École Mame Woli Gueye</strong></p>
+    <p>Yène-Nditakh, Rufisque, Sénégal</p>
+    <p>© <span id="annee"></span> EMWG. Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    document.getElementById("annee").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
