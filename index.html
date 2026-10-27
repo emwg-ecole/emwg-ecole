@@ -58,16 +58,24 @@
       font-size: 32px;
       line-height: 1.2;
     }
-    .hero p { max-width: 580px; margin: 18px auto; }
-    .button {
-      display: inline-block;
-      background: #075b45;
-      color: white;
-      padding: 12px 22px;
-      border-radius: 7px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+    .hero p { max-width: 580px; margin: 18px 
+.button {
+  display: inline-block;
+  background: #075b45;
+  color: white;
+  padding: 13px 22px;
+  margin: 6px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px #075b4525;
+  transition: background 0.2s ease;
+}
+
+.button:hover {
+  background: #064735;
+}
+
     section {
       padding: 35px 20px;
       max-width: 900px;
@@ -120,7 +128,14 @@
         votre établissement scolaire à Yène-Nditakh,
         dans le département de Rufisque, Dk-SEN.
       </p>
-      <a class="button" href="#contact">Nous contacter</a>
+      
+<a class="button"
+   href="https://wa.me/221771217295"
+   target="_blank"
+   rel="noopener noreferrer">
+  Contacter sur WhatsApp
+</a>
+
     </div>
 
     <section id="ecole">
@@ -136,6 +151,25 @@
         <p><strong>Localisation :</strong> Yène-Nditakh, Rufisque, Sénégal.</p>
       </div>
     </section>
+
+<section id="classes">
+  <h2>Nos niveaux scolaires</h2>
+
+  <div class="card">
+    <h3>Préscolaire</h3>
+    <p>Un accompagnement adapté aux premiers apprentissages et à l'éveil des enfants.</p>
+  </div>
+
+  <div class="card">
+    <h3>Élémentaire</h3>
+    <p>Un enseignement pour développer les connaissances fondamentales et préparer la suite du parcours scolaire.</p>
+  </div>
+
+  <div class="card">
+    <h3>Enseignement moyen : 6e, 5e et 4e</h3>
+<p>Notre établissement propose également les classes de 6e, de 5e et de 4e.</p>
+  </div>
+</section>
 
     <section id="contact">
       
